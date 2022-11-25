@@ -1,5 +1,3 @@
-package src.src;
-
 public class Player {
     public int NuvaerendeVaerdi;
     public int setNuvaerendeVaerdi;

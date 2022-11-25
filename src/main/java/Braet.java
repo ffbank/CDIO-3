@@ -1,5 +1,3 @@
-package src.src;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,6 +32,7 @@ public class Braet {
         BraetFelter.add(new Felter("Chancen", 0,21));
         BraetFelter.add(new Felter("Vandlandet", -5,22));
         BraetFelter.add(new Felter("Strandpromenaden", -5,23));
+
     }
 
 }

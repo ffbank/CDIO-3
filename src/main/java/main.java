@@ -1,9 +1,9 @@
-package src.src;
-
 import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) {
+        GUI gui = new GUI();
+
         Braet braet = new Braet();
         Braet2 braet2 = new Braet2();
         Player player = new Player();
@@ -30,11 +30,11 @@ public class main {
                 int slagSpiller1 = terning.getFaceValue() + SpillerLokation;
                 int slagSpiller2 = terning2.getFaceValue() + Spiller2Lokation;
                 if (slagSpiller1 > 23) {
-                    slagSpiller1 = slagSpiller1 - 23;
+                    slagSpiller1 -= 23;
 
                 }
                 if (slagSpiller2 > 23) {
-                    slagSpiller2 = slagSpiller2 - 23;
+                    slagSpiller2 -= 23;
                 }
                 System.out.println("Player 1 rolls:");
                 terning.roll();
