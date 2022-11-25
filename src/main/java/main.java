@@ -12,6 +12,8 @@ import gui_codebehind.GUI_Center;
 public class main {
     public static void main(String[] args) {
 
+        bræt Bræt = new bræt();
+        Bræt.Board();
         Scanner scan = new Scanner(System.in);
         Terning terning1 = new Terning();
         Terning terning2 = new Terning();
@@ -35,6 +37,11 @@ public class main {
         int PlayerBalance2 = player2.getBalance();
         int PlayerBalance3 = player3.getBalance();
         int PlayerBalance4 = player4.getBalance();
+
+
+
+
+
 
 
         String chosenButton = gui.getUserButtonPressed(
@@ -115,6 +122,7 @@ public class main {
                     "Roll a dice",
                     "Roll dice"
             );
+
 
             terning4.roll();
             gui.setDie(terning4.getFaceValue());
